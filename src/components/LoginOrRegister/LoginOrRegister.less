@@ -1,0 +1,125 @@
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 250, 250, 0.1);
+    backdrop-filter: blur(50px);
+    position: absolute;
+    display: none;
+}
+
+.all-box {
+    position: absolute;
+    top: 100px;
+    border-radius: 10px;
+    width: 350px;
+    background-color: rgb(231, 231, 231);
+    transform: translate3d(0, -130%, 0);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    padding: 20px 10px;
+    overflow: hidden;
+
+    .cancel {
+        position: absolute;
+        z-index: 1;
+        right: 30px;
+        top: 10px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .login-box {
+        //transform: translate3d(-100%, 0, 0);
+        transition: all 0.3s ease-in-out;
+        //position: absolute;
+
+        .title {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .login-input {
+            display: block;
+            margin-top: 30px;
+
+            input {
+                width: 80%;
+                height: 50px;
+                margin-top: 30px;
+                padding: 0 10px;
+                font-size: 17px;
+                background-color: rgb(231, 231, 231);
+                border-bottom: 2px solid rgb(66, 66, 66);
+
+                &:focus {
+                    border-bottom: 3px solid black;
+                }
+
+                &:hover {
+                    border-bottom: 3px solid black;
+                }
+            }
+
+            button {
+                width: 30%;
+                height: 40px;
+                margin-top: 30px;
+                font-size: 20px;
+                border-radius: 5px;
+                background-color: #0983e0;
+            }
+        }
+    }
+
+    .register-box {
+        //transform: translate3d(0%, 0, 0);
+        transition: all 0.3s ease-in-out;
+        margin-top:-300px;
+
+        .title {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .register-input {
+
+            input {
+                width: 80%;
+                height: 50px;
+                margin-top: 20px;
+                padding: 0 10px;
+                font-size: 17px;
+                background-color: rgb(231, 231, 231);
+                border-bottom: 2px solid rgb(66, 66, 66);
+
+                &:focus {
+                    border-bottom: 3px solid black;
+                }
+
+                &:hover {
+                    border-bottom: 3px solid black;
+                }
+            }
+
+            .code-input {
+                width: 50%;
+            }
+
+            .getCode {
+                width: 28%;
+                height: 30px;
+                margin-left: 2%;
+            }
+
+            .login-btn,
+            .register-btn {
+                width: 30%;
+                height: 40px;
+                margin-top: 30px;
+                font-size: 20px;
+                border-radius: 5px;
+                background-color: #0983e0;
+            }
+        }
+    }
+}

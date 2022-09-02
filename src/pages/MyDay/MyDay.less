@@ -1,0 +1,99 @@
+.my-day {
+    width: 100%;
+    height: 100%;
+    background-color: #88d1cc;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    //overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.4s ease-in-out;
+    //transform-origin: 100%;
+    //transform: rotateY(-10deg);
+    .content-top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+        width: 100%;
+
+        .title {
+            span {
+                display: block;
+                color: #fff;
+                font-size: 25px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            .describe {
+                font-size: 20px;
+                color: rgb(86, 86, 86);
+            }
+        }
+
+        .skinning {
+            font-size: 20px;
+            cursor: pointer;
+            color: #f5ea4c;
+
+            &:hover {
+                color: #c8bd1a;
+            }
+        }
+    }
+
+    .diary-content-list {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .write-diary {
+        width: 70px;
+        height: 70px;
+        background-color: rgba(255, 255, 255, .5);
+        backdrop-filter: blur(20px);
+        border-radius: 50%;
+        position: absolute;
+        z-index: 2;
+        right: 5%;
+        bottom: 10%;
+        box-shadow: 0px 0px 20px rgb(206, 206, 206);
+        transition: all 0.4s ease-in-out;
+        overflow: hidden;
+        //cursor: pointer;
+        color: #88d1cc;
+        span {
+            transition: all 0.3s ease-in-out;
+            pointer-events: none;
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: 600;
+            margin: 10px;
+            color: rgb(52, 52, 52);
+            text-align: center;
+        }
+
+        .diary-content {
+            margin:10px;
+            width: 97%;
+            height: 77%;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .btn {
+            display: flex; 
+            justify-content: space-evenly;
+            .cancel,
+            .ok { 
+                border-radius: 10px;
+                width: 100px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+    }
+}

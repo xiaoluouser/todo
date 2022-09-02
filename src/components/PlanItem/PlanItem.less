@@ -1,0 +1,51 @@
+.plan-item {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 16px;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
+
+    .plan {
+        margin-left: 20px;
+    }
+
+    .star {
+        position: absolute;
+        right: 30px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+    .startTime{
+        position: absolute;
+        right: 100px;
+        font-size: 14px;
+        color: rgb(127, 127, 127);
+    }
+    .delete{
+        color: rgb(254, 114, 114);
+        position: absolute;
+        font-size: 20px;
+        right: -5px;
+        top: -20px;
+        display: none;
+    }
+    &:hover{
+        .delete{
+            display: block;
+        }
+    }
+    .endTime{
+        color: rgb(127, 127, 127);
+        font-size: 15px;
+        position: absolute;
+        left: 150px;
+    }
+}
