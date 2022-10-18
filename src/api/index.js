@@ -2,12 +2,13 @@ import requests from "./request.js";
 import QS from 'qs';
 
 //将经纬度转换为位置名称
+const key='....';//高德地图的key
 export const getPosition = (longitude, latitude) => {
-    return requests.get(`https://restapi.amap.com/v3/geocode/regeo?key=6781815cf17ec3fb68dfc4e10ceeaa9d&location=${longitude},${latitude}`);
+    return requests.get(`https://restapi.amap.com/v3/geocode/regeo?key=${key}&location=${longitude},${latitude}`);
 }
 //获取高德天气
 export const getWeather = (adcode) => {
-    return requests.get(`https://restapi.amap.com/v3/weather/weatherInfo?key=6781815cf17ec3fb68dfc4e10ceeaa9d&extensions=base&city=${adcode}`);
+    return requests.get(`https://restapi.amap.com/v3/weather/weatherInfo?key=${key}&extensions=base&city=${adcode}`);
 }
 
 //获取验证码

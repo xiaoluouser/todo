@@ -5,6 +5,7 @@ const bcrypt = require("bcryptjs");
 //获取用户基本信息的处理函数
 exports.getUserInfo = async (req, res) => {
     //console.log(req.auth) //这里通过req中的auth可以拿到解析后token的信息，而不是通过req中的user获取
+    console.log(req);
     const userinfo = ['id', 'phone', 'username', 'avatar'];
     let selectUserInfo = `select ${userinfo} from users where id=?`;
     try {

@@ -15,6 +15,7 @@ function SideMenu() {
     useEffect(() => {
         (async function () {
             let meg = (await getUserInfo()).data.data;
+            console.log('@',meg);
             setUserInfo(meg);
         })()
     }, [])
@@ -23,7 +24,7 @@ function SideMenu() {
             <div className="user-info-show">
                 <div className="avatar"><img src={userInfo.avatar} alt="" /></div>
                 <div className="info">
-                    <p className="name">{userInfo.username}</p>
+                    <p className="name">{userInfo.name}</p>
                     <p className="phone">{userInfo.phone}</p>
                 </div>
             </div>
